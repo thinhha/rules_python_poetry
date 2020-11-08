@@ -15,3 +15,5 @@ def _poetry_export_impl(repository_ctx):
 poetry_export = repository_rule(
     implementation = _poetry_export_impl
 )
+
+requirements_path = repository_ctx.path("requirements.txt")
